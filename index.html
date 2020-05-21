@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Monotext</title>
+  <meta name="description" content="Convert standard text into unicode monotext">
+  <meta name="author" content="Coding Unicorn">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/polyfill-array-includes@2.0.0/index.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+
+<body>
+  <div class="container section"  id="app">
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+            <h2 class="subtitle">Turn text into unicode 𝚖𝚘𝚗𝚘𝚝𝚎𝚡𝚝.</h2>
+            <hr>
+            <textarea class="textarea" v-model="text" placeholder="start typing..."></textarea>
+        </div>
+    </div>
+    <div class="columns is-mobile is-centered">
+      <div class="column is-half">
+        <textarea class="textarea" v-model="monotext" readonly></textarea>
+        <br>
+        <!-- <br> -->
+        <!-- <br> -->
+        <h2 class="subtitle is-7 has-text-right">Made by <strong><a href="https://instagram.com/coding_unicorn">Coding Unicorn</a></strong> 🦄 </h2>
+      </div>
+  </div>
+
+    
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>
