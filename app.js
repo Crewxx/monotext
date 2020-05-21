@@ -14,7 +14,7 @@ var app = new Vue({
 function mono(text) {
 
   function special(c) {
-    let chars = {
+    const chars = {
       ' ': String.fromCodePoint(0x2000),
       '-': String.fromCodePoint(0x2013)
     }
