@@ -29,7 +29,7 @@ function mono(text) {
 
   function num(c) {
     const numOffset = 0x1d7f6;
-    let numbers = '0123456789'
+    const numbers = '0123456789'
     return numbers.includes(c) ? String.fromCodePoint(numbers.indexOf(c) + numOffset) : c;
   }
 
